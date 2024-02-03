@@ -1,0 +1,206 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./OTF/Satoshi-Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./OTF/Satoshi-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./OTF/Satoshi-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./OTF/Satoshi-Regular.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./OTF/Satoshi-Light.otf);
+    font-weight: 100;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: satoshi;
+    font-weight: 500;
+    background-color: black;
+}
+
+/* Background and Font Colors */
+#home,
+#mentor-jury,
+#faq,
+#timeline,
+#sponsors,
+#media-partners {
+    background-color: black;
+    color: white;
+    padding: 0 64px;
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 0 64px;
+}
+
+/* Hero Styles */
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(./HeroAssets/bg-hero.png) black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home div div {
+    padding-bottom: 80px;
+
+    h1 {
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+}
+
+#home div #char {
+    height: calc(100vh - 98.5px);
+    width: auto;
+}
+
+#home #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#video,
+#champion-prizes,
+#about,
+#join-us,
+#other-events,
+#contact-us,
+#social-media,
+#registration,
+#login,
+#dashboard,
+#admin-panel {
+    background-color: white;
+    color: black;
+}
+
+/* Video Styles */
+#video {
+    border-radius: 128px 128px 0 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video iframe {
+    width: 80%;
+    height: 70vh;
+    border-radius: 24px;
+}
+
+/* Prizes Styles */
+#champion-prizes {
+    border-radius: 0 0 128px 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 96px;
+        line-height: 96px;
+    }
+}
+
+#prizes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 80px 0;
+}
+
+.prize div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
